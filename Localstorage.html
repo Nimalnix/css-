@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<center><b>User information</b><br><br>
+
+<!--# is used to dont send data to any server-->
+
+<form  action="#" >
+    <label for="EmployeeID">EmployeeID</label>
+    <input type="text" name="EmployeeID" id="EmployeeID" value="100" /><br>
+    <label for="firstname">firstname</label>
+    <input type="text" name="firstname" id="firstname" placeholder="enter ur name"required  minlength="5"maxlength="10"/>
+    <label for="age">age</label>
+    <input type="number" name="age" id="age" required min="18" max="60">
+    <br><br><br>
+    <fieldset>
+      select Gender <br>
+    <input type="radio" name="Gender" value="M"/>Male<br>
+    <input type="radio" name="Gender" value="F"/>Female<br>
+     </fieldset>
+   
+   
+     <b>Hobbies</b><br>
+    <fieldset>
+        <input type="checkbox" name="Hobbies" value="cricket"/>cricket<br>
+        <input type="checkbox" name="Hobbies" value="Music"/>Music<br>
+        <input type="checkbox" name="Hobbies" value="Football"/>Football<br>
+    </fieldset>
+
+     <input type="submit" onclick="saveData()" value="save"/>&nbsp;&nbsp;
+     <input type="reset" value="reset" />
+
+
+</form>
+
+   <script>
+    function saveData()
+    {
+        var v=document.forms[0].EmployeeID.value;
+
+        var a=document.forms[0].firstname.value;
+
+        var b=document.forms[0].age.value;
+         
+        var c=document.forms[0].Gender.value;
+
+        console.log(v+"\t\t"+a+"\t\t"+b+"\t\t"+c);
+        
+        localStorage.EmployeeID=v;
+        localStorage.firstname=a;
+        localStorage.age=b;
+        localStorage.Gender=c;
+    }
+
+   </script>
+</center>
+</body>
+</html>

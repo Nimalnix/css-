@@ -1,0 +1,25 @@
+child selector:
+                 div > u  ->parent tag > child tag
+
+Container tags or compsite tags - Tags which can hold other tags
+        eg:
+           >body
+           >Html}--\
+           >Head}--/  This two tags cannot be styled
+           >div
+           >span
+           >pre
+           >form
+           > i,u,b
+
+a:link-->unvisited link
+a:visited-->visited link
+
+layout:
+       .column layout
+       .Grid layout
+       .Float layout
+       .Flex layout
+
+
+.div,span,pre

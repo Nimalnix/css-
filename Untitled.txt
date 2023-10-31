@@ -1,0 +1,50 @@
+
+import logo from './logo.svg';
+import './App.css';
+import { useState, useEffect } from 'react';
+
+function App() {
+  const [data, setData] = useState([]);
+  const [showList, setShowList] = useState(false);
+
+  useEffect(() => {
+    fetch("http://localhost:9901/getall")
+      .then(response => response.json())
+      .then(data => setData(data));
+  }, []);
+
+  const handleButtonClick = () => {
+    setShowList(true);
+  };
+
+  return (
+    <div>
+      <button onClick={handleButtonClick}>Show List</button>
+      {showList && (
+        <ul>
+          {data.map(item => (
+  <div key={item.id}>
+    <li>{item.userid}</li>
+    <li>{item.password}</li>
+    <li>{item.emailid}</li>
+  </div>
+))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+DELETE FROM table_name
+WHERE userid = 'your_userid';

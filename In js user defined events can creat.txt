@@ -1,0 +1,10 @@
+In js user defined events can created in two ways
+.Event class
+.Custom Event Class
+
+
+-------------------------------------------------------------------------------------
+                                  React
+
+.Using React we can create reactive websites(dynamic)
+.npx 

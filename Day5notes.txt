@@ -1,0 +1,11 @@
+postions-
+        .Absolute position always start with top left corner
+        .Relative position 
+
+******************************************************************
+                          JAVA SCRIPT
+.Extension of html
+.In html we cannot perform programming and store in database
+.js cann perform dom manupulaction,Event handling and can create dynamic html pages
+.js don't have datatypes
+.var in js can hold any type of values no restrictions

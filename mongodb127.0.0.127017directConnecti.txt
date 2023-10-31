@@ -1,0 +1,20 @@
+ mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.0.2
+
+
+
+express mongoDb packages
+
+.npm install mongoose-->Driver to connect to mongoDB
+
+.npm i dotenv-->
+
+
+
+
+
+
+
+name:angularsecurity
+domain:dev-py7kzl50xt4mrlbm.us.auth0.com
+clientID:CnwqHga3ZVdykucA5VfFKz7IyTFzxMWB
+clientscreat:shWfYl_ZNSz5sHu0Z5XKyxRlew3wCqMBKUIB5DUjxW6N78uObr5Yvplh3ybP_yX-

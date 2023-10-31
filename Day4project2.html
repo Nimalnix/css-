@@ -1,0 +1,155 @@
+<html>
+    <style>
+        body
+        {
+           margin-left: 20px;
+        }
+        b{
+             font-size: larger;
+             font-weight:bolder;
+             color: blue;
+        }
+        h1,h2,h3
+        {
+            color: red;
+        }
+        i
+        {
+            color: rgb(219, 36, 149);
+        }
+    </style>
+    <head>
+        <title>
+            Form filling
+        </title>
+    </head>
+    <body>
+        
+            <h1>1. Tell us about yourself</h1>
+            
+            <b>Your Name</b><br><br>
+            <i>First name:</i><br>
+            <input type="text" required minlength="3" maxlength="10" />
+            <br><br>
+            <i>Last name:</i><br>
+            <input type="text" required minlength="3" maxlength="10" />
+            <br><br>
+            <label><i>Gender:</i></label><br>
+
+
+            <select>
+            
+                <option value="- Select One -">- Select One -</option>
+             
+            <option value="Male" >Male</option>
+
+            <option value="Female">Female</option>
+
+            </select>
+
+           <br><br>
+           <b>Birthday</b>
+           <br><br>
+          
+           <label><i>Month:</i></label><br>
+
+           <select>
+             
+            <option value="- Select Month -">- Select Month -</option>
+           
+            <option value="January" >January</option>
+            <option value="Feburary" >Feburary</option>   
+            <option value="March" >March</option>
+            <option value="April" >April</option>
+            <option value="May" >May</option>
+            <option value="June" >June</option>
+            <option value="July" >July</option>
+            <option value="August" >August</option>
+            <option value="September" >September</option>
+            <option value="October" >October</option>
+            <option value="November" >November</option>
+            <option value="December" >December</option>
+
+            
+           
+
+           </select>
+           <br><br>
+           <i>Day:</i><br>
+           <input type="Number" required minlength="1" maxlength="31" />
+           <br><br>
+           <i>Year:</i><br>
+           <input type="Number" required minlength="1900" maxlength="2023" />
+
+           <br><br>
+           <b>I live in</b><br>
+
+
+            <select>
+            
+                <option value="City">        </option>
+             
+            <option value="Chennai" >Chennai</option>
+
+            <option value="Mumbai">Mumbai</option>
+
+            <option value="Kerala" >Kerala</option>
+
+            <option value="Kashmir" >Kashmir</option>
+
+
+            </select>
+
+             
+            <br><br>
+            <b>Postal Code</b><br>
+           <input type="number" required minlength="6" maxlength="6" />
+            <br><br>
+              
+             
+            <h2>2. Select an ID and password</h2>
+            <br><br>
+
+            <b>NDParking ID</b><br>
+            <input type="text" required minlength="6" maxlength="6" />
+            @ndparking.com <br>
+             ID may consist of a-z, 0-9, underscores, and a single dot (.)
+             <br><br>
+             <b>Password</b><br>
+             <input type="password" required minlength="5" maxlength="15" placeholder="Enter your password"/><br>
+             Capitalization matters. Use 6 to 32 characters, no spaces.
+             <br><br>
+             <b>Re-type Password</b><br>
+             <input type="password" required minlength="5" maxlength="15" /><br>
+             <br><br>
+
+           <h3>3. In case you forget your ID or password</h3>
+           <br><br>
+           <i>Alternate Email :</i><br>
+           <input type="email" placeholder="Enter your EmailID" minlength="6"  /><br>
+            <br>
+            <i>Security Question  :</i><br>
+            <select>
+            
+                <option value="- Select One -">- Select One -</option>
+             
+            <option value="x" >Your First Love</option>
+
+            <option value="y">Your Last Love</option>
+
+            <option value="y">Your Favourite Place</option>
+
+
+            </select>
+            <br><br>
+
+            <i>Your Answer  :</i><br>
+            <input type="text" required minlength="35"  /><br>
+           <br><br>
+            <input type="submit" value="Submit"/>&nbsp;&nbsp;
+            <input type="reset" value="Reset"/>&nbsp;&nbsp;
+            <input type="button" value="Close"/>&nbsp;&nbsp;
+
+        
+    </body>
+</html>

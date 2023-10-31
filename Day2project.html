@@ -1,0 +1,90 @@
+<center>
+<b>user Details</b>
+<br>
+<br>
+
+<form>
+
+    <label>First Name</label>
+<br>
+    <input type="text" name="FirstName" placeholder="enter your name" required  minlength="5" maxlength="10"/>
+
+<br>
+
+   <label >Last Name</label>
+<br>
+<input type="text" name="LastName"  required minlength="1" maxlength="10" />
+
+<br>
+
+    
+    <label >Address</label>
+<br>
+<input type="text" name="Address" required minlenth="3" maxlength="40" />
+
+<br>
+
+    <label>Phone Number</label>
+<br>
+<input type="number" name="PhoneNumber" placeholder="Enter the number" required minlength="10" maxlength="10" />
+
+    <br>
+
+   <label>EmailID</label>
+<br>
+<input type="email" placeholder="Enter your EmailID" name="emailID" minlength="6" />
+
+           <input type="submit" onclick="saveData()" value="Add"/>&nbsp;&nbsp;
+
+
+
+
+</form>
+
+   <script>
+
+                function saveData()
+
+                {
+
+                    var v=document.forms[0].FirstName.value;
+
+                    var a=document.forms[0].LastName.value;
+
+                    var b=document.forms[0].Address.value;
+
+                    var c=document.forms[0].PhoneNumber.value;
+
+                    var d=document.forms[0].emailID.value;
+
+                    console.log(v+"\t\t"+a+"\t\t"+b+"\t\t"+c+"\t\t"+d);
+
+                    sessionStorage.FirstName=v;
+
+                    sessionStorage.LastName=a;
+
+                    sessionStorage.Address=b;
+
+                    sessionStorage.PhoneNumber=c;
+
+                    sessionStorage.emailID=d;
+
+           
+
+                }
+
+   </script>
+
+
+
+
+      <table border="5px" style="border:5px ;border-style: groove;border-color:black;border-radius: 4px;"
+       align="center" width="500px" height="500px">
+
+         <tr align="center">
+       <td><b>First Name</b></td>
+       <td><b>Last Name</b></td>
+       <td><b>Address</b></td>
+       <td><b>Phone Number</b></td>
+        </tr>
+
